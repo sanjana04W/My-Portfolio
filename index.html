@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Wenuri Sanjana | Software Engineering Undergraduate & Full-Stack Developer</title>
+  <meta name="title" content="Wenuri Sanjana | Software Engineering Undergraduate & Full-Stack Developer">
+  <meta name="description" content="Portfolio of Wenuri Sanjana Herath – Software Engineering undergraduate at OUSL, full-stack developer, UI/UX enthusiast, featuring 18+ real-world web apps, e-commerce systems, and verified certifications.">
+  <meta name="keywords" content="Wenuri Sanjana, Wenuri Sanjana Herath, Software Engineer, Full-Stack Developer, React, Next.js, Sri Lanka, Portfolio, UI/UX Designer, OUSL">
+  <meta name="author" content="Wenuri Sanjana Herath">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/sanjana04W">
+  <meta property="og:title" content="Wenuri Sanjana | Software Engineering Undergraduate & Full-Stack Developer">
+  <meta property="og:description" content="Explore projects, certifications, technical skills, and volunteer contributions of Wenuri Sanjana Herath.">
+  <meta property="og:image" content="images/profile-hero.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Wenuri Sanjana | Software Engineering Undergraduate">
+  <meta property="twitter:description" content="Explore projects, certifications, and technical skills of Wenuri Sanjana Herath.">
+  <meta property="twitter:image" content="images/profile-hero.jpg">
+
+  <!-- Favicon with Modern Blue Gradient matching brand logo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='bgGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%232F92D4'/><stop offset='100%25' stop-color='%231D5E9E'/></linearGradient></defs><rect width='100' height='100' rx='26' fill='url(%23bgGrad)'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui, -apple-system, sans-serif' font-size='44' font-weight='800' fill='%23FFFFFF' letter-spacing='-1'>WS</text></svg>">
+
+  <!-- Google Fonts (Poppins & Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#EFF6FF',
+              100: '#DBEAFE',
+              200: '#BFDBFE',
+              300: '#93C5FD',
+              400: '#60A5FA',
+              500: '#3B82F6',
+              600: '#2563EB',
+              700: '#1D4ED8',
+              800: '#1E3A8A',
+              900: '#1E2D6B',
+            },
+            accent: '#F59E0B'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Theme Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#F8FAFC] dark:bg-[#0F172A] text-[#24302E] dark:text-[#E7F0EE] transition-colors duration-300">
+
+  <!-- =========================================================================
+       2. NAVIGATION BAR
+       Exact navigation labels:
+       Home | About | Skills | Education | Experience | Projects | Volunteer | My Certifications | Blog | Contact Me
+       ========================================================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Wordmark -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#1D5E9E] via-[#2A76BC] to-[#2F92D4] flex items-center justify-center text-white font-extrabold text-lg font-display shadow-md shadow-[#2A76BC]/30 group-hover:scale-105 transition-transform">
+          WS
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-lg tracking-tight text-gray-900 dark:text-white leading-tight">
+            Wenuri Sanjana
+          </span>
+          <span class="text-[10px] uppercase font-mono tracking-widest text-[#2563EB] dark:text-[#38BDF8] font-semibold">
+            Software Engineer
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden xl:flex items-center space-x-5 text-sm">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#volunteer" class="nav-link">Volunteer</a>
+        <a href="#certifications" class="nav-link">My Certifications</a>
+        <a href="#blog" class="nav-link">Blog</a>
+      </nav>
+
+      <!-- Right Controls: Theme Toggle & Prominent Contact Me Button -->
+      <div class="flex items-center gap-3">
+        <!-- Theme Toggle -->
+        <button type="button" class="theme-toggle-btn p-2.5 rounded-xl border border-[#2563EB]/20 hover:border-[#2563EB] dark:border-[#38BDF8]/30 bg-white dark:bg-[#1E293B] text-gray-700 dark:text-gray-200 shadow-sm transition-all" aria-label="Toggle light and dark mode">
+          <svg class="theme-icon-moon w-5 h-5 text-[#2563EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg class="theme-icon-sun w-5 h-5 text-[#FFCB47]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+
+        <!-- Prominent Contact Me Button -->
+        <a href="#contact" class="hidden sm:inline-flex btn-primary-gradient px-5 py-2.5 rounded-xl text-sm font-semibold tracking-wide shadow-md">
+          Contact Me
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" id="mobileMenuBtn" class="xl:hidden p-2.5 rounded-xl border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200" aria-label="Open mobile menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden xl:hidden bg-white/95 dark:bg-[#0F172A]/95 backdrop-blur-xl border-b border-[#2563EB]/20 px-6 py-5 shadow-xl transition-all">
+      <nav class="flex flex-col space-y-3 text-base font-medium">
+        <a href="#home" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">Home</a>
+        <a href="#about" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">About</a>
+        <a href="#skills" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">Skills</a>
+        <a href="#education" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">Education</a>
+        <a href="#experience" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">Experience</a>
+        <a href="#projects" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">Projects</a>
+        <a href="#volunteer" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">Volunteer</a>
+        <a href="#certifications" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">My Certifications</a>
+        <a href="#blog" class="mobile-nav-link py-1.5 hover:text-[#2563EB]">Blog</a>
+        <a href="#contact" class="mobile-nav-link py-2 font-semibold text-[#2563EB] dark:text-[#38BDF8]">Contact Me →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. HOME / HERO SECTION
+       Two-column layout:
+       Left column: Intro label, Main heading, Animated title, Short intro, CTA buttons, Text link, Social icons
+       Right column: Portrait photo, Floating tech badges (React, Next.js, JS, Python, Firebase), Status label
+       ========================================================================= -->
+  <section id="home" class="relative min-h-screen pt-28 pb-20 flex items-center overflow-hidden">
+    <!-- Understated Ambient Blobs -->
+    <div class="hero-glow-blob hero-glow-blob-1"></div>
+    <div class="hero-glow-blob hero-glow-blob-2"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-7 space-y-6 fade-in-up">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#2563EB]/10 dark:bg-[#38BDF8]/15 border border-[#2563EB]/20">
+            <span class="w-2 h-2 rounded-full bg-[#2563EB] dark:bg-[#38BDF8] animate-pulse"></span>
+            <span class="text-xs font-mono font-semibold text-[#2563EB] dark:text-[#38BDF8] tracking-wider uppercase">
+              SOFTWARE ENGINEERING UNDERGRADUATE
+            </span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight font-display text-gray-900 dark:text-white leading-[1.15]">
+            Hi, I'm <span class="gradient-text">Wenuri Sanjana.</span>
+          </h1>
+
+          <div class="text-xl sm:text-2xl font-semibold text-[#1D4ED8] dark:text-[#38BDF8] font-display">
+            Software Engineer <span class="text-[#FFCB47]">|</span> Full-Stack Developer <span class="text-[#FFCB47]">|</span> UI/UX Enthusiast
+          </div>
+
+          <p class="text-base sm:text-lg text-gray-600 dark:text-[#94A3B8] max-w-2xl leading-relaxed">
+            I'm a Software Engineering undergraduate passionate about building modern, responsive, and user-friendly digital experiences. I enjoy transforming ideas into practical applications using modern web technologies, creative design, and problem-solving.
+          </p>
+
+          <!-- Buttons & Action Links -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#projects" class="btn-primary-gradient px-6 py-3.5 rounded-xl font-semibold text-sm inline-flex items-center gap-2">
+              <span>Explore My Projects</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            </a>
+            
+            <a href="Wenuri Sanjana CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary-outline px-6 py-3.5 rounded-xl font-semibold text-sm inline-flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#2563EB] dark:text-[#38BDF8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              <span>View My CV</span>
+            </a>
+
+            <a href="#contact" class="text-sm font-semibold text-[#2563EB] dark:text-[#38BDF8] hover:underline px-2 py-1 flex items-center gap-1 group">
+              <span>Let's Connect</span>
+              <span class="group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="pt-4 flex items-center gap-4 text-gray-600 dark:text-gray-300">
+            <span class="text-xs font-mono uppercase tracking-wider text-gray-400">Find Me:</span>
+            
+            <a href="https://github.com/sanjana04W" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-[#2563EB] transition-colors" aria-label="GitHub Profile">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/wenuri-sanjana-65b0b22b4/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-[#2563EB] transition-colors" aria-label="LinkedIn Profile">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+
+            <a href="https://www.behance.net/wenurisanjana" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-[#2563EB] transition-colors" aria-label="Behance Profile">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-4.976 3-3.411 0-5.75-2.439-5.75-5.918 0-3.371 2.316-5.986 5.625-5.986 3.65 0 5.421 2.651 5.074 6.279h-8.083c.121 1.737 1.547 2.753 3.256 2.753 1.488 0 2.378-.658 2.854-1.128h2zm-2.525-4.521c-.066-1.144-.817-2.274-2.428-2.274-1.472 0-2.296 1.066-2.449 2.274h4.877zm-14.201-7.479h-7v14.904h6.812c3.551 0 5.438-1.765 5.438-4.57 0-1.802-1.002-3.08-2.457-3.619 1.139-.569 1.957-1.748 1.957-3.385 0-2.39-1.805-3.33-4.75-3.33zm-4.148 2.697h3.407c1.373 0 2.051.649 2.051 1.637 0 1.054-.783 1.696-2.115 1.696h-3.343v-3.333zm0 5.862h3.693c1.474 0 2.293.753 2.293 1.899 0 1.18-.846 1.927-2.372 1.927h-3.614v-3.826z"/></svg>
+            </a>
+
+            <a href="https://medium.com/@wenuris2004" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-[#2563EB] transition-colors" aria-label="Medium Profile">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+            </a>
+
+            <a href="https://www.researchgate.net/profile/Wenuri-Herath?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-[#2563EB] transition-colors" aria-label="ResearchGate Profile">
+              <span class="font-bold text-xs">RG</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Profile Frame & Floating Badges -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+          <div class="relative w-72 sm:w-80 md:w-96">
+            
+            <!-- Glow circle background -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-[#1E3A8A] to-[#38BDF8] rounded-3xl blur-2xl opacity-25 dark:opacity-30"></div>
+
+            <!-- Portrait Frame -->
+            <div class="relative bg-white dark:bg-[#1E293B] p-3 rounded-3xl shadow-xl border border-[#2563EB]/20">
+              <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <img src="images/profile-hero.jpg" alt="Wenuri Sanjana" class="w-full h-full object-cover object-top" onerror="this.src='images/profile-about.jpg'">
+              </div>
+
+              <!-- Status Label -->
+              <div class="mt-3 py-2 px-3.5 rounded-xl bg-[#F8FAFC] dark:bg-[#334155] flex items-center justify-between border border-[#2563EB]/15">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#2563EB]"></span>
+                  <span class="text-xs font-semibold text-gray-800 dark:text-white">Software Engineering Undergraduate</span>
+                </div>
+                <span class="text-[11px] font-mono text-[#2563EB] dark:text-[#38BDF8]">OUSL</span>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges (React, Next.js, JavaScript, Python, Firebase) -->
+            <div class="floating-badge absolute -top-4 -left-6 bg-white dark:bg-[#1E293B] px-3.5 py-1.5 rounded-xl shadow-lg border border-[#2563EB]/20 flex items-center gap-2 text-xs font-semibold">
+              <span class="text-[#38BDF8]">⚛</span>
+              <span>React</span>
+            </div>
+
+            <div class="floating-badge absolute top-20 -right-8 bg-white dark:bg-[#1E293B] px-3.5 py-1.5 rounded-xl shadow-lg border border-[#2563EB]/20 flex items-center gap-2 text-xs font-semibold">
+              <span class="font-mono text-xs font-bold text-gray-900 dark:text-white">N</span>
+              <span>Next.js</span>
+            </div>
+
+            <div class="floating-badge absolute bottom-28 -left-8 bg-white dark:bg-[#1E293B] px-3.5 py-1.5 rounded-xl shadow-lg border border-[#2563EB]/20 flex items-center gap-2 text-xs font-semibold">
+              <span class="text-[#FFCB47] font-bold">JS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="floating-badge absolute bottom-4 -right-6 bg-white dark:bg-[#1E293B] px-3.5 py-1.5 rounded-xl shadow-lg border border-[#2563EB]/20 flex items-center gap-2 text-xs font-semibold">
+              <span class="text-blue-500">🐍</span>
+              <span>Python</span>
+            </div>
+
+            <div class="floating-badge absolute -bottom-5 left-10 bg-white dark:bg-[#1E293B] px-3 py-1 rounded-xl shadow-lg border border-[#2563EB]/20 flex items-center gap-2 text-xs font-semibold">
+              <span class="text-amber-500">🔥</span>
+              <span>Firebase</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. ABOUT ME SECTION
+       Section heading: "About Me"
+       Subtitle: "A little about my journey, passion, and goals."
+       Two-column layout: photo on one side, verified introduction, 4 cards:
+       Problem Solver | Continuous Learner | Team Collaborator | UI/UX Enthusiast
+       ========================================================================= -->
+  <section id="about" class="py-24 bg-white dark:bg-[#0B1120] border-t border-b border-[#2563EB]/10 dark:border-[#38BDF8]/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          About <span class="gradient-text">Me</span>
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          A little about my journey, passion, and goals.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Professional Portrait -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-72 sm:w-80 md:w-88">
+            <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl border border-[#2563EB]/20 bg-gray-100 dark:bg-gray-800">
+              <img src="images/profile-about.jpg" alt="Wenuri Sanjana - About" class="w-full h-full object-cover" onerror="this.src='images/profile-hero.jpg'">
+            </div>
+            <!-- Decorative Accent Frame -->
+            <div class="absolute -bottom-4 -right-4 -z-10 w-full h-full rounded-2xl border-2 border-[#2563EB]/30 dark:border-[#38BDF8]/30"></div>
+          </div>
+        </div>
+
+        <!-- Right: Verified Personal Information -->
+        <div class="lg:col-span-7 space-y-6">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white font-display">
+            Hello! I'm <span class="text-[#2563EB] dark:text-[#38BDF8]">Wenuri Sanjana Herath</span>
+          </h3>
+
+          <p class="text-base text-gray-700 dark:text-[#94A3B8] leading-relaxed">
+            Hello! I'm Wenuri Sanjana Herath, a motivated Software Engineering undergraduate at the Open University of Sri Lanka. I enjoy designing and developing attractive, responsive, and user-friendly applications that solve practical problems.
+          </p>
+
+          <p class="text-base text-gray-700 dark:text-[#94A3B8] leading-relaxed">
+            My experience includes academic and independent projects involving frontend development, full-stack web applications, database management, e-commerce systems, and mobile application development. I enjoy exploring modern technologies, developing reusable components, and creating digital experiences that balance functionality with good design.
+          </p>
+
+          <p class="text-base text-gray-700 dark:text-[#94A3B8] leading-relaxed">
+            I'm continuously expanding my knowledge of software engineering, UI/UX design, cloud technologies, and application architecture. I value collaboration, attention to detail, continuous learning, and thoughtful problem-solving.
+          </p>
+
+          <!-- Four Highlight Cards -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+            
+            <div class="p-4 rounded-xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/15 text-center">
+              <div class="w-10 h-10 mx-auto rounded-lg bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center mb-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+              </div>
+              <span class="text-xs font-bold text-gray-900 dark:text-white block">Problem Solver</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/15 text-center">
+              <div class="w-10 h-10 mx-auto rounded-lg bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center mb-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              </div>
+              <span class="text-xs font-bold text-gray-900 dark:text-white block">Continuous Learner</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/15 text-center">
+              <div class="w-10 h-10 mx-auto rounded-lg bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center mb-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              </div>
+              <span class="text-xs font-bold text-gray-900 dark:text-white block">Team Collaborator</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/15 text-center">
+              <div class="w-10 h-10 mx-auto rounded-lg bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center mb-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+              </div>
+              <span class="text-xs font-bold text-gray-900 dark:text-white block">UI/UX Enthusiast</span>
+            </div>
+
+          </div>
+
+          <!-- Professional Objective Note -->
+          <div class="p-4 rounded-xl bg-[#2563EB]/5 dark:bg-[#38BDF8]/10 border-l-4 border-[#2563EB] dark:border-[#38BDF8]">
+            <p class="text-sm italic text-gray-700 dark:text-[#94A3B8]">
+              "My objective is to become a skilled software engineer who builds reliable, scalable, and user-focused digital solutions that make everyday life simpler and businesses more productive."
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. TECHNICAL SKILLS SECTION
+       Section heading: "Technical Skills"
+       Subtitle: "Technologies and tools I use to build digital solutions."
+       Categorized cards with clear icons, no fabricated rating bars:
+       Programming Languages | Frontend | Backend | Database | Mobile | UI/UX | Tools
+       Soft Skills subsection
+       ========================================================================= -->
+  <section id="skills" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          Technical <span class="gradient-text">Skills</span>
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          Technologies and tools I use to build digital solutions.
+        </p>
+      </div>
+
+      <!-- Skills Categorized Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Programming Languages -->
+        <div class="portfolio-card p-6 rounded-2xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/15 dark:border-[#38BDF8]/20 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center font-mono font-bold text-sm">
+              &lt;/&gt;
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Programming Languages</h3>
+              <p class="text-xs text-gray-500">Core logic and algorithmic foundations</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/java.svg" alt="Java" class="w-4 h-4 object-contain"> Java</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/python.svg" alt="Python" class="w-4 h-4 object-contain"> Python</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/javascript.svg" alt="JavaScript" class="w-4 h-4 object-contain"> JavaScript</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/sql.svg" alt="SQL" class="w-4 h-4 object-contain"> SQL</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/kotlin.svg" alt="Kotlin" class="w-4 h-4 object-contain"> Kotlin <span class="text-[10px] text-gray-400">(Learning)</span></span>
+          </div>
+        </div>
+
+        <!-- 2. Frontend Development -->
+        <div class="portfolio-card p-6 rounded-2xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/15 dark:border-[#38BDF8]/20 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center font-bold text-sm">
+              🎨
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Frontend Development</h3>
+              <p class="text-xs text-gray-500">Responsive, component-driven interfaces</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/react.svg" alt="React.js" class="w-4 h-4 object-contain"> React.js</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/nextjs.svg" alt="Next.js" class="w-4 h-4 object-contain"> Next.js</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/html5.svg" alt="HTML5" class="w-4 h-4 object-contain"> HTML5</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/css3.svg" alt="CSS3" class="w-4 h-4 object-contain"> CSS3</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/tailwindcss.svg" alt="Tailwind CSS" class="w-4 h-4 object-contain"> Tailwind CSS</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/javascript.svg" alt="JavaScript" class="w-4 h-4 object-contain"> JavaScript (ES6+)</span>
+          </div>
+        </div>
+
+        <!-- 3. Backend Development -->
+        <div class="portfolio-card p-6 rounded-2xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/15 dark:border-[#38BDF8]/20 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center font-bold text-sm">
+              ⚙️
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Backend Development</h3>
+              <p class="text-xs text-gray-500">APIs, server routes, and data flows</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/nodejs.svg" alt="Node.js" class="w-4 h-4 object-contain"> Node.js</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/nextjs.svg" alt="Next.js" class="w-4 h-4 object-contain"> Next.js API Routes</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm">
+              <svg class="w-4 h-4 text-[#2563EB] dark:text-[#38BDF8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <span>REST API Development</span>
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm">
+              <svg class="w-4 h-4 text-[#F59E0B]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              <span>Authentication & Authorization (JWT)</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- 4. Database Technologies -->
+        <div class="portfolio-card p-6 rounded-2xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/15 dark:border-[#38BDF8]/20 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center font-bold text-sm">
+              💾
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Database Technologies</h3>
+              <p class="text-xs text-gray-500">Relational & NoSQL persistence</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/firebase.svg" alt="Firebase" class="w-4 h-4 object-contain"> Firebase Firestore</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/mongodb.svg" alt="MongoDB" class="w-4 h-4 object-contain"> MongoDB & Mongoose</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/mysql.svg" alt="MySQL" class="w-4 h-4 object-contain"> MySQL</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/sqlite.svg" alt="SQLite" class="w-4 h-4 object-contain"> SQLite</span>
+          </div>
+        </div>
+
+        <!-- 5. Mobile Development -->
+        <div class="portfolio-card p-6 rounded-2xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/15 dark:border-[#38BDF8]/20 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center font-bold text-sm">
+              📱
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Mobile Development</h3>
+              <p class="text-xs text-gray-500">Cross-platform application frameworks</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/react.svg" alt="React Native" class="w-4 h-4 object-contain"> React Native</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/dart.svg" alt="Dart" class="w-4 h-4 object-contain"><img src="images/skills/flutter.svg" alt="Flutter" class="w-4 h-4 object-contain"> Dart / Flutter</span>
+          </div>
+        </div>
+
+        <!-- 6. UI/UX and Design -->
+        <div class="portfolio-card p-6 rounded-2xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/15 dark:border-[#38BDF8]/20 shadow-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center font-bold text-sm">
+              ✨
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">UI/UX and Design</h3>
+              <p class="text-xs text-gray-500">User research, ergonomics & styling</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/figma.svg" alt="Figma" class="w-4 h-4 object-contain"> Figma</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/canva.svg" alt="Canva" class="w-4 h-4 object-contain"> Canva</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm">
+              <svg class="w-4 h-4 text-[#38BDF8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+              <span>Responsive Web Design</span>
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm">
+              <svg class="w-4 h-4 text-[#60A5FA]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+              <span>Wireframing & Interface Prototyping</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- 7. Development Tools & Cloud -->
+        <div class="portfolio-card p-6 rounded-2xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/15 dark:border-[#38BDF8]/20 shadow-sm lg:col-span-3">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center font-bold text-sm">
+              🛠️
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Development Tools & Technologies</h3>
+              <p class="text-xs text-gray-500">Version control, cloud infrastructure, and deployment pipelines</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/git.svg" alt="Git" class="w-4 h-4 object-contain"> Git</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/github.svg" alt="GitHub" class="w-4 h-4 object-contain dark:invert"> GitHub</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/firebase.svg" alt="Firebase" class="w-4 h-4 object-contain"> Firebase Authentication</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/firebase.svg" alt="Firebase" class="w-4 h-4 object-contain"> Firebase Storage</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm">
+              <svg class="w-4 h-4 text-[#38BDF8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>EmailJS</span>
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/docker.svg" alt="Docker" class="w-4 h-4 object-contain"> Docker</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/vercel.svg" alt="Vercel" class="w-4 h-4 object-contain dark:invert"> Vercel</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/linux.svg" alt="Linux" class="w-4 h-4 object-contain"> Linux Basics</span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8FAFC] dark:bg-[#334155] text-xs font-semibold text-gray-800 dark:text-gray-200 border border-[#2563EB]/10 hover:border-[#2563EB]/30 dark:hover:border-[#38BDF8]/40 transition-all duration-200 shadow-sm"><img src="images/skills/postman.svg" alt="Postman" class="w-4 h-4 object-contain"> Postman API Testing</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Soft Skills Subsection -->
+      <div class="mt-12 p-8 rounded-2xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/15 dark:border-[#38BDF8]/20 shadow-sm">
+        <h3 class="text-xl font-bold font-display text-gray-900 dark:text-white mb-2">
+          Professional Soft Skills
+        </h3>
+        <p class="text-sm text-gray-500 mb-6">Work ethics and interpersonal dynamics that ensure successful team delivery</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div class="p-3.5 rounded-xl bg-[#F8FAFC] dark:bg-[#334155] border border-[#2563EB]/10 text-center">
+            <span class="text-xl mb-1 block">🔍</span>
+            <span class="text-xs font-bold text-gray-800 dark:text-gray-200">Attention to Detail</span>
+          </div>
+          <div class="p-3.5 rounded-xl bg-[#F8FAFC] dark:bg-[#334155] border border-[#2563EB]/10 text-center">
+            <span class="text-xl mb-1 block">🧠</span>
+            <span class="text-xs font-bold text-gray-800 dark:text-gray-200">Problem-Solving & Analytical Thinking</span>
+          </div>
+          <div class="p-3.5 rounded-xl bg-[#F8FAFC] dark:bg-[#334155] border border-[#2563EB]/10 text-center">
+            <span class="text-xl mb-1 block">🤝</span>
+            <span class="text-xs font-bold text-gray-800 dark:text-gray-200">Collaboration & Communication</span>
+          </div>
+          <div class="p-3.5 rounded-xl bg-[#F8FAFC] dark:bg-[#334155] border border-[#2563EB]/10 text-center">
+            <span class="text-xl mb-1 block">🚀</span>
+            <span class="text-xs font-bold text-gray-800 dark:text-gray-200">Leadership & Team Coordination</span>
+          </div>
+          <div class="p-3.5 rounded-xl bg-[#F8FAFC] dark:bg-[#334155] border border-[#2563EB]/10 text-center">
+            <span class="text-xl mb-1 block">📚</span>
+            <span class="text-xs font-bold text-gray-800 dark:text-gray-200">Self-Motivation & Quick Learning</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. EDUCATION SECTION
+       Section heading: "Education"
+       Subtitle: "My academic journey and professional development."
+       Modern vertical timeline:
+       - Bachelor's Degree: The Open University of Sri Lanka (BSE, Nov 2023 - Nov 2027)
+       - Advanced Level: Kuliyapitiya Central College (2020-2022, Technology Stream)
+       ========================================================================= -->
+  <section id="education" class="py-24 bg-white dark:bg-[#0B1120] border-t border-b border-[#2563EB]/10 dark:border-[#38BDF8]/15">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          <span class="gradient-text">Education</span>
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          My academic journey and professional development.
+        </p>
+      </div>
+
+      <div class="relative pl-6 md:pl-0 space-y-12">
+        
+        <!-- Timeline vertical stem line -->
+        <div class="timeline-stem"></div>
+
+        <!-- 1. Bachelor's Degree -->
+        <div class="relative flex flex-col md:flex-row items-start group">
+          <!-- Timeline point dot -->
+          <div class="absolute -left-[30px] md:left-1/2 md:-ml-3.5 top-5 w-7 h-7 rounded-full bg-[#2563EB] text-white flex items-center justify-center shadow-lg border-4 border-white dark:border-[#0F172A] z-10">
+            <div class="w-2 h-2 rounded-full bg-white animate-ping"></div>
+          </div>
+
+          <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] mb-1">
+              November 2023 – November 2027
+            </span>
+            <div class="text-xs font-semibold text-amber-600 dark:text-amber-400">Status: In Progress</div>
+          </div>
+
+          <div class="md:w-1/2 md:pl-12">
+            <div class="portfolio-card p-6 rounded-2xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/15 shadow-sm">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-white dark:bg-black/40 flex items-center justify-center p-1.5 shadow-sm">
+                  <img src="images/ousl.png" alt="OUSL Logo" class="max-h-full max-w-full object-contain" onerror="this.style.display='none'">
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 dark:text-white leading-snug">
+                    Bachelor of Software Engineering (Honours)
+                  </h3>
+                  <p class="text-xs font-medium text-[#2563EB] dark:text-[#38BDF8]">The Open University of Sri Lanka</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 dark:text-[#94A3B8] leading-relaxed mb-4">
+                Currently pursuing a Software Engineering degree, developing knowledge of software development principles, programming, databases, algorithms, web applications, and software engineering practices.
+              </p>
+              
+              <div class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Relevant Academic Areas:</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Software Engineering</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Object-Oriented Programming</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Web Application Development</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Python Programming</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Data Structures and Algorithms</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Data Modeling & Database Systems</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Android Development</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">UX Engineering</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-[#334155] text-[11px] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Computer Organization & OS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Advanced Level Education -->
+        <div class="relative flex flex-col md:flex-row items-start group">
+          <div class="absolute -left-[30px] md:left-1/2 md:-ml-3.5 top-5 w-7 h-7 rounded-full bg-[#38BDF8] text-white flex items-center justify-center shadow-lg border-4 border-white dark:border-[#0F172A] z-10">
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+
+          <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#38BDF8]/15 text-[#2563EB] dark:text-[#38BDF8] mb-1">
+              2020 – 2022
+            </span>
+            <div class="text-xs font-semibold text-gray-500">Secondary Education</div>
+          </div>
+
+          <div class="md:w-1/2 md:pl-12">
+            <div class="portfolio-card p-6 rounded-2xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/15 shadow-sm">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-white dark:bg-black/40 flex items-center justify-center p-1.5 shadow-sm">
+                  <img src="images/school.png" alt="Kuliyapitiya Central College" class="max-h-full max-w-full object-contain" onerror="this.style.display='none'">
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 dark:text-white leading-snug">
+                    G.C.E. Advanced Level – Technology Stream
+                  </h3>
+                  <p class="text-xs font-medium text-[#2563EB] dark:text-[#38BDF8]">Kuliyapitiya Central College</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 dark:text-[#94A3B8] leading-relaxed mb-4">
+                Completed secondary education in the Technology stream with solid foundation in Engineering principles, scientific technology, and computing.
+              </p>
+              
+              <div class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Examination Subjects:</div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md bg-white dark:bg-[#334155] text-xs font-medium text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-700">⚙️ Engineering Technology</span>
+                <span class="px-2.5 py-1 rounded-md bg-white dark:bg-[#334155] text-xs font-medium text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-700">🔬 Science for Technology</span>
+                <span class="px-2.5 py-1 rounded-md bg-white dark:bg-[#334155] text-xs font-medium text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-700">💻 Information and Communication Technology (ICT)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. PROFESSIONAL EXPERIENCE SECTION
+       Section heading: "Professional Experience"
+       Subtitle: "My practical experience and professional growth."
+       Role: Software Engineer Intern
+       Company: Codezela Technologies
+       Duration: May 2026 – Present
+       ========================================================================= -->
+  <section id="experience" class="py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          Professional <span class="gradient-text">Experience</span>
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          My practical experience and professional growth.
+        </p>
+      </div>
+
+      <div class="portfolio-card p-8 rounded-3xl bg-white dark:bg-[#1E293B] border border-[#2563EB]/20 shadow-md">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-gray-100 dark:border-gray-800">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2563EB]/10 text-[#2563EB] dark:text-[#38BDF8] text-xs font-semibold mb-2">
+              <span>💼 Internship</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white font-display">
+              Software Engineer Intern
+            </h3>
+            <p class="text-base font-semibold text-[#2563EB] dark:text-[#38BDF8] mt-1">
+              Codezela Technologies
+            </p>
+          </div>
+          
+          <div class="md:text-right">
+            <span class="inline-block px-3.5 py-1.5 rounded-xl font-mono text-xs font-semibold bg-[#F8FAFC] dark:bg-[#334155] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+              May 2026 – Present
+            </span>
+          </div>
+        </div>
+
+        <div class="pt-6 space-y-4">
+          <p class="text-base text-gray-700 dark:text-[#94A3B8] leading-relaxed">
+            Developing practical software engineering experience while contributing to software development activities and strengthening my understanding of modern application development.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-[#F8FAFC] dark:bg-[#334155] border border-[#2563EB]/10">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Key Focus Areas</h4>
+              <ul class="text-sm space-y-2 text-gray-700 dark:text-[#94A3B8]">
+                <li class="flex items-center gap-2">
+                  <span class="text-[#2563EB]">✓</span> Full-stack web application development
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-[#2563EB]">✓</span> Component architecture & responsive frontend implementations
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-[#2563EB]">✓</span> Practical team workflows and version-controlled collaboration
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#F8FAFC] dark:bg-[#334155] border border-[#2563EB]/10">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Core Technologies Applied</h4>
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 rounded bg-white dark:bg-black/30 text-xs font-mono font-medium text-gray-800 dark:text-gray-200">React.js</span>
+                <span class="px-2.5 py-1 rounded bg-white dark:bg-black/30 text-xs font-mono font-medium text-gray-800 dark:text-gray-200">Next.js</span>
+                <span class="px-2.5 py-1 rounded bg-white dark:bg-black/30 text-xs font-mono font-medium text-gray-800 dark:text-gray-200">Tailwind CSS</span>
+                <span class="px-2.5 py-1 rounded bg-white dark:bg-black/30 text-xs font-mono font-medium text-gray-800 dark:text-gray-200">REST APIs</span>
+                <span class="px-2.5 py-1 rounded bg-white dark:bg-black/30 text-xs font-mono font-medium text-gray-800 dark:text-gray-200">Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. FEATURED PROJECTS SECTION
+       Section heading: "Featured Projects"
+       Subtitle: "A selection of applications and digital solutions I've designed and developed."
+       Interactive Gallery with category filters, modal detail view, live demos
+       ========================================================================= -->
+  <section id="projects" class="py-24 bg-white dark:bg-[#0B1120] border-t border-b border-[#2563EB]/10 dark:border-[#38BDF8]/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          Featured <span class="gradient-text">Projects</span>
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          A selection of applications and digital solutions I've designed and developed.
+        </p>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 mb-12">
+        <button type="button" class="project-filter-btn filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm active" data-filter="All Projects">
+          All Projects
+        </button>
+        <button type="button" class="project-filter-btn filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm" data-filter="Full-Stack Development">
+          Full-Stack Development
+        </button>
+        <button type="button" class="project-filter-btn filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm" data-filter="Web Development">
+          Web Development
+        </button>
+        <button type="button" class="project-filter-btn filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm" data-filter="E-Commerce">
+          E-Commerce
+        </button>
+        <button type="button" class="project-filter-btn filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm" data-filter="Mobile Applications">
+          Mobile Applications
+        </button>
+        <button type="button" class="project-filter-btn filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm" data-filter="UI/UX and Other Projects">
+          UI/UX and Other Projects
+        </button>
+      </div>
+
+      <!-- Projects Grid Container (dynamically populated by app.js from data.js) -->
+      <div id="projectsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered via JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <div class="modal-box p-6 md:p-8 relative">
+      <button type="button" id="projectModalClose" class="absolute top-5 right-5 p-2 rounded-xl text-gray-500 hover:text-gray-900 dark:hover:text-white bg-gray-100 dark:bg-gray-800 transition-colors" aria-label="Close modal">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div id="projectModalBody">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       9. VOLUNTEER SECTION
+       Software Engineering Society [SESoc OUSL]
+       Ballerina, Open Day 2024, Open Day 2025, React + Mock API, AGM 2025/26, AGM 2024/25
+       Using images from images/Volunteer images/
+       ========================================================================= -->
+  <section id="volunteer" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          Volunteer <span class="gradient-text">Activities</span>
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          Contributing to the software engineering community, tech events, and knowledge sharing.
+        </p>
+      </div>
+
+      <div id="volunteerContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Populated via JS from VOLUNTEER_DATA -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. MY CERTIFICATIONS SECTION
+       Section heading: "My Certifications"
+       Subtitle: "Continuous learning through professional courses and technical training."
+       Searchable & filterable gallery, modal preview
+       ========================================================================= -->
+  <section id="certifications" class="py-24 bg-white dark:bg-[#0B1120] border-t border-b border-[#2563EB]/10 dark:border-[#38BDF8]/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          My <span class="gradient-text">Certifications</span>
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          Continuous learning through professional courses and technical training.
+        </p>
+      </div>
+
+      <!-- Search & Category Filters -->
+      <div class="max-w-4xl mx-auto mb-10 space-y-4">
+        <!-- Search bar -->
+        <div class="relative">
+          <input type="text" id="certSearchInput" placeholder="Search certifications by name, issuer, or topic (e.g. Docker, Python, UI/UX, Moratuwa)..." class="w-full px-5 py-3.5 pl-12 rounded-2xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/20 dark:border-[#38BDF8]/25 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#38BDF8] transition-all">
+          <svg class="w-5 h-5 text-gray-400 absolute left-4 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <button type="button" class="cert-filter-btn filter-btn px-3.5 py-1.5 rounded-lg text-xs active" data-filter="All">All</button>
+          <button type="button" class="cert-filter-btn filter-btn px-3.5 py-1.5 rounded-lg text-xs" data-filter="Professional Certifications">Professional Certifications</button>
+          <button type="button" class="cert-filter-btn filter-btn px-3.5 py-1.5 rounded-lg text-xs" data-filter="Web Development">Web Development</button>
+          <button type="button" class="cert-filter-btn filter-btn px-3.5 py-1.5 rounded-lg text-xs" data-filter="Programming">Programming</button>
+          <button type="button" class="cert-filter-btn filter-btn px-3.5 py-1.5 rounded-lg text-xs" data-filter="UI/UX Design">UI/UX Design</button>
+          <button type="button" class="cert-filter-btn filter-btn px-3.5 py-1.5 rounded-lg text-xs" data-filter="Machine Learning">Machine Learning</button>
+          <button type="button" class="cert-filter-btn filter-btn px-3.5 py-1.5 rounded-lg text-xs" data-filter="DevOps and Cloud">DevOps and Cloud</button>
+          <button type="button" class="cert-filter-btn filter-btn px-3.5 py-1.5 rounded-lg text-xs" data-filter="Linux and Developer Tools">Linux & Developer Tools</button>
+        </div>
+      </div>
+
+      <!-- Certifications Grid -->
+      <div id="certsContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certification Preview Modal -->
+  <div id="certModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="modal-box p-6 md:p-8 relative">
+      <button type="button" id="certModalClose" class="absolute top-5 right-5 p-2 rounded-xl text-gray-500 hover:text-gray-900 dark:hover:text-white bg-gray-100 dark:bg-gray-800 transition-colors" aria-label="Close certificate preview">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div id="certModalBody">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       11. BLOG SECTION
+       6 Articles with Medium links and images from images/Blogs/
+       ========================================================================= -->
+  <section id="blog" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          Latest <span class="gradient-text">Blog</span> Articles
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          Thoughts and insights on artificial intelligence, software engineering, open source, and personal growth.
+        </p>
+      </div>
+
+      <div id="blogsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Populated via JS from BLOGS_DATA -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. CONTACT ME SECTION
+       Section heading: "Let's Connect"
+       Subtitle: "Have a project idea, opportunity, or just want to say hello? I'd love to hear from you."
+       Two-column layout:
+       Contact Info: Email, Phone, Location, GitHub, LinkedIn, Behance, Medium, ResearchGate
+       Contact Form: Full Name, Email, Subject, Message, Send Message button
+       ========================================================================= -->
+  <section id="contact" class="py-24 bg-white dark:bg-[#0B1120] border-t border-b border-[#2563EB]/10 dark:border-[#38BDF8]/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white">
+          Let's <span class="gradient-text">Connect</span>
+        </h2>
+        <p class="mt-3 text-base text-gray-600 dark:text-[#94A3B8]">
+          Have a project idea, opportunity, or just want to say hello? I'd love to hear from you.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Verified Contact Information -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="p-8 rounded-3xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/15 space-y-6">
+            <h3 class="text-xl font-bold font-display text-gray-900 dark:text-white">
+              Contact Information
+            </h3>
+            
+            <div class="space-y-4">
+              <!-- Email -->
+              <a href="mailto:wenuris2004@gmail.com" class="flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-xl bg-white dark:bg-[#334155] text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <span class="text-xs font-mono uppercase text-gray-400 block">Email Address</span>
+                  <span class="text-sm font-semibold text-gray-800 dark:text-gray-100 group-hover:text-[#2563EB] transition-colors">wenuris2004@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+94701442569" class="flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-xl bg-white dark:bg-[#334155] text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <span class="text-xs font-mono uppercase text-gray-400 block">Phone</span>
+                  <span class="text-sm font-semibold text-gray-800 dark:text-gray-100 group-hover:text-[#2563EB] transition-colors">+94 70 144 2569</span>
+                </div>
+              </a>
+
+              <!-- Location -->
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-white dark:bg-[#334155] text-[#2563EB] dark:text-[#38BDF8] flex items-center justify-center shadow-sm">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <span class="text-xs font-mono uppercase text-gray-400 block">Location</span>
+                  <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">Sri Lanka</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Icons List -->
+            <div class="pt-6 border-t border-gray-200 dark:border-gray-800">
+              <span class="text-xs font-mono uppercase tracking-wider text-gray-400 block mb-3">Connect Online</span>
+              <div class="flex flex-wrap gap-2.5">
+                <a href="https://github.com/sanjana04W" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white dark:bg-[#334155] hover:text-[#2563EB] text-gray-700 dark:text-gray-300 shadow-sm transition-all" title="GitHub">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/wenuri-sanjana-65b0b22b4/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white dark:bg-[#334155] hover:text-[#2563EB] text-gray-700 dark:text-gray-300 shadow-sm transition-all" title="LinkedIn">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://www.behance.net/wenurisanjana" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white dark:bg-[#334155] hover:text-[#2563EB] text-gray-700 dark:text-gray-300 shadow-sm transition-all" title="Behance">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-4.976 3-3.411 0-5.75-2.439-5.75-5.918 0-3.371 2.316-5.986 5.625-5.986 3.65 0 5.421 2.651 5.074 6.279h-8.083c.121 1.737 1.547 2.753 3.256 2.753 1.488 0 2.378-.658 2.854-1.128h2zm-2.525-4.521c-.066-1.144-.817-2.274-2.428-2.274-1.472 0-2.296 1.066-2.449 2.274h4.877zm-14.201-7.479h-7v14.904h6.812c3.551 0 5.438-1.765 5.438-4.57 0-1.802-1.002-3.08-2.457-3.619 1.139-.569 1.957-1.748 1.957-3.385 0-2.39-1.805-3.33-4.75-3.33zm-4.148 2.697h3.407c1.373 0 2.051.649 2.051 1.637 0 1.054-.783 1.696-2.115 1.696h-3.343v-3.333zm0 5.862h3.693c1.474 0 2.293.753 2.293 1.899 0 1.18-.846 1.927-2.372 1.927h-3.614v-3.826z"/></svg>
+                </a>
+                <a href="https://medium.com/@wenuris2004" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white dark:bg-[#334155] hover:text-[#2563EB] text-gray-700 dark:text-gray-300 shadow-sm transition-all" title="Medium">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                </a>
+                <a href="https://www.researchgate.net/profile/Wenuri-Herath?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white dark:bg-[#334155] hover:text-[#2563EB] text-gray-700 dark:text-gray-300 shadow-sm transition-all font-bold text-xs" title="ResearchGate">
+                  RG
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="p-8 rounded-3xl bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#2563EB]/15">
+            <h3 class="text-xl font-bold font-display text-gray-900 dark:text-white mb-2">
+              Send a Message
+            </h3>
+            <p class="text-sm text-gray-500 mb-6">
+              Fill in your details below. I usually respond within 24–48 hours.
+            </p>
+
+            <!-- Form Notification / Alert -->
+            <div id="formAlert" class="hidden"></div>
+
+            <form id="contactForm" class="space-y-4" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="fullName" class="block text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-1.5">
+                    Full Name <span class="text-red-500">*</span>
+                  </label>
+                  <input type="text" id="fullName" name="fullName" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#334155] border border-gray-200 dark:border-gray-700 text-sm focus:outline-none focus:border-[#2563EB] transition-colors">
+                </div>
+
+                <div>
+                  <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-1.5">
+                    Email Address <span class="text-red-500">*</span>
+                  </label>
+                  <input type="email" id="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#334155] border border-gray-200 dark:border-gray-700 text-sm focus:outline-none focus:border-[#2563EB] transition-colors">
+                </div>
+              </div>
+
+              <div>
+                <label for="subject" class="block text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-1.5">
+                  Subject <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="subject" name="subject" required placeholder="Project inquiry / Opportunity discussion" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#334155] border border-gray-200 dark:border-gray-700 text-sm focus:outline-none focus:border-[#2563EB] transition-colors">
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-1.5">
+                  Message <span class="text-red-500">*</span>
+                </label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project, idea, or questions..." class="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#334155] border border-gray-200 dark:border-gray-700 text-sm focus:outline-none focus:border-[#2563EB] transition-colors resize-y"></textarea>
+              </div>
+
+              <button type="submit" id="formSubmitBtn" class="btn-primary-gradient w-full py-3.5 rounded-xl font-semibold text-sm shadow-md flex items-center justify-center gap-2">
+                <span>Send Message</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       16. FOOTER
+       WS monogram or Wenuri Sanjana wordmark
+       Short professional tagline
+       Quick navigation links
+       GitHub and LinkedIn icons
+       Email contact link
+       Copyright text: "© 2026 Wenuri Sanjana Herath. All rights reserved."
+       Back-to-top control
+       ========================================================================= -->
+  <footer class="py-16 bg-[#F8FAFC] dark:bg-[#0F172A] border-t border-[#2563EB]/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-gray-200 dark:border-gray-800">
+        
+        <!-- Brand & Tagline -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <a href="#home" class="flex items-center gap-3 mb-2">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#1D5E9E] via-[#2A76BC] to-[#2F92D4] flex items-center justify-center text-white font-extrabold font-display shadow-md shadow-[#2A76BC]/30">
+              WS
+            </div>
+            <span class="font-display font-bold text-xl text-gray-900 dark:text-white">Wenuri Sanjana</span>
+          </a>
+          <p class="text-sm text-gray-500 max-w-sm">
+            Software Engineering Undergraduate • Full-Stack Developer • Designing practical digital solutions with modern web technologies.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div class="flex flex-wrap items-center justify-center gap-5 text-sm font-medium text-gray-600 dark:text-gray-300">
+          <a href="#home" class="hover:text-[#2563EB]">Home</a>
+          <a href="#about" class="hover:text-[#2563EB]">About</a>
+          <a href="#skills" class="hover:text-[#2563EB]">Skills</a>
+          <a href="#education" class="hover:text-[#2563EB]">Education</a>
+          <a href="#projects" class="hover:text-[#2563EB]">Projects</a>
+          <a href="#volunteer" class="hover:text-[#2563EB]">Volunteer</a>
+          <a href="#certifications" class="hover:text-[#2563EB]">Certifications</a>
+          <a href="#blog" class="hover:text-[#2563EB]">Blog</a>
+          <a href="#contact" class="hover:text-[#2563EB]">Contact</a>
+        </div>
+
+        <!-- Social & Email links -->
+        <div class="flex items-center gap-4">
+          <a href="https://github.com/sanjana04W" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white dark:bg-[#1E293B] text-gray-700 dark:text-gray-300 hover:text-[#2563EB] shadow-sm transition-all" aria-label="GitHub">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/wenuri-sanjana-65b0b22b4/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white dark:bg-[#1E293B] text-gray-700 dark:text-gray-300 hover:text-[#2563EB] shadow-sm transition-all" aria-label="LinkedIn">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+
+          <a href="mailto:wenuris2004@gmail.com" class="p-2.5 rounded-xl bg-white dark:bg-[#1E293B] text-gray-700 dark:text-gray-300 hover:text-[#2563EB] shadow-sm transition-all" aria-label="Email Me">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright & Back to Top -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>© 2026 Wenuri Sanjana Herath. All rights reserved.</p>
+        <button type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="hover:text-[#2563EB] flex items-center gap-1 font-medium transition-colors">
+          <span>Back to Top</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button type="button" id="backToTopBtn" class="fixed bottom-6 right-6 z-40 p-3 rounded-2xl btn-primary-gradient shadow-xl opacity-0 pointer-events-none transition-all duration-300" aria-label="Scroll back to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
