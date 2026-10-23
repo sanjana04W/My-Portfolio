@@ -435,6 +435,35 @@ const PROJECTS_DATA = [
       "Interactive navigation and user-friendly interface",
       "Dynamic content organization using JavaScript"
     ]
+  },
+  {
+    id: "flamira",
+    title: "Flamira",
+    tagline: "Candle & Gift Shop E-Commerce Platform",
+    subtitle: "A modern, mobile-first e-commerce platform designed for Flamira, a Sri Lankan handmade candle, home décor, and gifting business.",
+    description: "A modern, mobile-first e-commerce platform designed for Flamira, a Sri Lankan handmade candle, home décor, and gifting business. The platform transforms social-media-based selling into a centralized online shopping experience, enabling customers to explore products, check availability, place Cash on Delivery (COD) orders, and track purchases. A dedicated admin dashboard provides centralized management of products, inventory, customers, orders, promotions, and business analytics.",
+    categories: ["Full-Stack Development", "E-Commerce", "Web Development"],
+    image: "images/projects/Flamira.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Cloud Firestore", "Firebase Authentication", "Firebase Storage", "Firebase Cloud Functions", "Vercel"],
+    liveDemo: "https://flamira-candle-shop.vercel.app/",
+    sourceCode: null,
+    objectives: "Develop a scalable e-commerce solution that streamlines online shopping, automates order and inventory management, improves the customer experience, and enables data-driven marketing to support Flamira's business growth.",
+    keyFeatures: [
+      "Responsive, mobile-first e-commerce storefront",
+      "Product catalogue with search, category filters, and occasion-based browsing",
+      "Detailed product pages with images, variants, pricing, and availability",
+      "Shopping cart, coupon application, and delivery charge calculation",
+      "Guest checkout with Cash on Delivery (COD)",
+      "Automated order numbering and order tracking",
+      "Custom admin dashboard with role-based access control",
+      "Product, category, and inventory management",
+      "Order processing, customer management, and stock tracking",
+      "Promotions, product reviews, and content management",
+      "Sales reports, business analytics, and low-stock alerts",
+      "Secure server-side validation and Firebase authentication",
+      "Social media marketing integration and campaign attribution",
+      "SEO optimization and transactional email notifications"
+    ]
   }
 ];
 
