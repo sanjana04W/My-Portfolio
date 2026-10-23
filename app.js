@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBlogs();
   initContactForm();
   initScrollAnimations();
+  initHeroTypewriter();
 });
 
 /* ----------------------------------------------------
@@ -698,4 +699,53 @@ function initScrollAnimations() {
   });
 
   elements.forEach(el => observer.observe(el));
+}
+
+/* ----------------------------------------------------
+   11. Hero Typewriter Effect
+---------------------------------------------------- */
+function initHeroTypewriter() {
+  const target = document.getElementById('heroTypewriter');
+  if (!target) return;
+
+  const words = [
+    'Software Engineer',
+    'Full-Stack Developer',
+    'UI/UX Enthusiast'
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typeSpeed = 100;
+  const deleteSpeed = 50;
+  const holdAfterTyping = 1800;
+  const holdAfterDeleting = 500;
+
+  function tick() {
+    const currentWord = words[wordIndex];
+
+    if (isDeleting) {
+      charIndex--;
+      target.textContent = currentWord.substring(0, charIndex);
+    } else {
+      charIndex++;
+      target.textContent = currentWord.substring(0, charIndex);
+    }
+
+    let delay = isDeleting ? deleteSpeed : typeSpeed;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+      delay = holdAfterTyping;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      delay = holdAfterDeleting;
+    }
+
+    setTimeout(tick, delay);
+  }
+
+  tick();
 }
