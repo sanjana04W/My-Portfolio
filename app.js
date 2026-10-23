@@ -709,7 +709,7 @@ function initHeroTypewriter() {
   if (!target) return;
 
   const words = [
-    'Software Engineer',
+    'Software Engineer Undergraduate',
     'Full-Stack Developer',
     'UI/UX Enthusiast'
   ];
