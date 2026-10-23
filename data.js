@@ -410,6 +410,31 @@ const PROJECTS_DATA = [
       "Real-time courier and order-status tracking concept",
       "Clean layouts, balanced negative space, and visual consistency"
     ]
+  },
+  {
+    id: "my-portfolio",
+    title: "My Portfolio",
+    tagline: "Personal Portfolio Website",
+    subtitle: "A modern, responsive personal portfolio website developed to showcase Wenuri Sanjana's professional profile as a Software Engineering undergraduate.",
+    description: "A modern, responsive personal portfolio website developed to showcase Wenuri Sanjana's professional profile as a Software Engineering undergraduate. The website highlights technical skills, educational background, internship experience, featured projects, professional certifications, and achievements through a clean and user-friendly interface.",
+    categories: ["Web Development", "UI/UX and Other Projects"],
+    image: "images/projects/My Portfolio.png",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    liveDemo: "https://sanjana04w.github.io/My-Portfolio/",
+    sourceCode: null,
+    objectives: "Build a professional online presence to showcase software development projects, technical expertise, and career achievements while providing recruiters and potential clients with easy access to the CV, social profiles, and contact information.",
+    keyFeatures: [
+      "Modern and responsive portfolio design",
+      "Personal introduction and professional profile",
+      "Technical skills and technology showcase",
+      "Education and internship experience sections",
+      "Featured projects with live demo links",
+      "Professional certifications and achievements",
+      "Downloadable CV access",
+      "Contact information and social media integration",
+      "Interactive navigation and user-friendly interface",
+      "Dynamic content organization using JavaScript"
+    ]
   }
 ];
 
